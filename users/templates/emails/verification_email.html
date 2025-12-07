@@ -1,0 +1,47 @@
+<!-- users/templates/emails/verification_email.html -->
+{% extends "emails/base_email.html" %}
+
+{% block title %}Verify Your Email - {{ site_name }}{% endblock %}
+
+{% block header_content %}
+    <h1 style="margin: 0; font-size: 24px;">
+        {% if is_resend %}
+            Your New Verification Code
+        {% else %}
+            Verify Your Email Address
+        {% endif %}
+    </h1>
+    <p style="margin: 10px 0 0; opacity: 0.9;">
+        {% if is_resend %}
+            Here's your new verification code
+        {% else %}
+            Welcome to {{ site_name }}!
+        {% endif %}
+    </p>
+{% endblock %}
+
+{% block content %}
+    <p>Hello <strong>{{ user.username }}</strong>,</p>
+    
+    {% if is_resend %}
+        <p>You requested a new verification code. Here it is:</p>
+    {% else %}
+        <p>Thank you for registering with {{ site_name }}! To complete your registration and activate your account, please verify your email address using the code below:</p>
+    {% endif %}
+    
+    <div class="verification-code">
+        {{ verification_code }}
+    </div>
+    
+    <p><strong>Important:</strong> This verification code will expire in <strong>24 hours</strong>.</p>
+    
+    <div style="background-color: #e8f4fd; border-left: 4px solid #2196F3; padding: 12px 15px; margin: 20px 0; border-radius: 4px;">
+        <p style="margin: 0; color: #0c5460;">
+            <strong>📱 Need help?</strong><br>
+            If you didn't create an account, please ignore this email. The code will expire automatically.
+        </p>
+    </div>
+    
+    <p style="margin-top: 30px;">Best regards,<br>
+    <strong>The {{ site_name }} Team</strong></p>
+{% endblock %}

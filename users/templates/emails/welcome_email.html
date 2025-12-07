@@ -1,0 +1,44 @@
+<!-- users/templates/emails/welcome_email.html -->
+{% extends "emails/base_email.html" %}
+
+{% block title %}Welcome to {{ site_name }}!{% endblock %}
+
+{% block header_content %}
+    <h1 style="margin: 0; font-size: 24px;">🎉 Welcome to {{ site_name }}!</h1>
+    <p style="margin: 10px 0 0; opacity: 0.9;">
+        Your account is now fully activated
+    </p>
+{% endblock %}
+
+{% block content %}
+    <p>Hello <strong>{{ user.username }}</strong>,</p>
+    
+    <p>Thank you for verifying your email address! Your account is now fully activated and ready to use.</p>
+    
+    <div style="text-align: center; margin: 30px 0;">
+        <a href="{{ site_url }}/login" class="button">Go to Login</a>
+    </div>
+    
+    <h3 style="color: #495057; border-bottom: 2px solid #f0f0f0; padding-bottom: 10px;">
+        Getting Started
+    </h3>
+    
+    <ul style="padding-left: 20px;">
+        <li>Browse our collection of baby products</li>
+        <li>Add items to your wishlist</li>
+        <li>Enjoy exclusive member discounts</li>
+        <li>Track your orders easily</li>
+    </ul>
+    
+    <div style="background-color: #f0f9ff; border: 1px solid #b6e0fe; border-radius: 8px; padding: 20px; margin: 25px 0;">
+        <h4 style="margin-top: 0; color: #1e6bb8;">💡 Pro Tip</h4>
+        <p style="margin-bottom: 0;">
+            Complete your profile by adding a profile picture and shipping address to speed up future checkouts!
+        </p>
+    </div>
+    
+    <p>If you have any questions or need assistance, feel free to contact our support team at <a href="mailto:{{ support_email }}">{{ support_email }}</a>.</p>
+    
+    <p style="margin-top: 30px;">Happy shopping!<br>
+    <strong>The {{ site_name }} Team</strong></p>
+{% endblock %}
