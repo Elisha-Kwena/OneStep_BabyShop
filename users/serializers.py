@@ -53,7 +53,7 @@ class RegisterSerializer(serializers.ModelSerializer):
     class Meta:
         model = CustomUser
         fields = [
-            'id','email', 'username', 'phone', 'password', 'password_confirm'
+            'id','email', 'username', 'password', 'password_confirm'
         ]
 
 
@@ -64,10 +64,6 @@ class RegisterSerializer(serializers.ModelSerializer):
     def validate_username(self,value):
         if CustomUser.objects.filter(username__iexact=value).exists():
             raise serializers.ValidationError(_("A user with that username already exists"))
-        return value
-    def validate_phone(self,value):
-        if CustomUser.objects.filter(phone__iexact=value).exists():
-            raise serializers.ValidationError(_("A user with that phoneNumber already exists"))
         return value
     
     def validate(self,data):

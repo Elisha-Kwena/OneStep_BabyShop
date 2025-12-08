@@ -15,19 +15,21 @@ class CustomUserManager(BaseUserManager):
         user.save(using=self.db)
         return user
     
+    # users/managers.py
     def create_superuser(self, email, username=None, password=None, **extra_fields):
-        """Create superuser - username is optional"""
+        """Create superuser — phone is completely optional"""
         extra_fields.setdefault('is_staff', True)
         extra_fields.setdefault('is_superuser', True)
         extra_fields.setdefault('is_active', True)
         extra_fields.setdefault('is_email_verified', True)
-        
+
+        if extra_fields.get('is_staff') is not True:
+            raise ValueError('Superuser must have is_staff=True.')
+        if extra_fields.get('is_superuser') is not True:
+            raise ValueError('Superuser must have is_superuser=True.')
+
         # If username not provided, use part of email
         if username is None:
             username = email.split('@')[0]
-        
-        # Ensure unique phone
-        if 'phone' not in extra_fields:
-            extra_fields['phone'] = 'admin-0000000000'
-        
+
         return self.create_user(email, username, password, **extra_fields)

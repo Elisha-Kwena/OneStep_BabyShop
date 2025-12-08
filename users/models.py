@@ -32,9 +32,10 @@ class CustomUser(AbstractBaseUser,PermissionsMixin):
 
     phone = models.CharField(
         verbose_name=_("phoneNumber"),
-        unique=True,
         max_length=20,
-        blank=False,
+        blank=True,     
+        null=True,       
+        unique=True,     
         error_messages={
             'unique': _('A user with that phoneNumber already exists.'),
         }
