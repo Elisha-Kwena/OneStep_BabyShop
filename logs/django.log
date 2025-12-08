@@ -642,3 +642,7 @@ Not Found: /api/v1/register/
 Not Found: /api/v1/register/
 Method Not Allowed: /api/v1/auth/register/
 Not Found: /api/v1/auth/
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\users\utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\users\serializers.py changed, reloading.
+Watching for file changes with StatReloader

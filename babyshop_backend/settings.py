@@ -255,3 +255,6 @@ REDOC_SETTINGS = {
     'PATH_IN_MIDDLE': False,
 }
 
+EMAIL_TIMEOUT = 15  # Seconds before timeout (was default 30)
+EMAIL_USE_SSL = False
+EMAIL_USE_TLS = True
