@@ -77,7 +77,7 @@ def send_verification_email(user, is_resend=False):
         email.attach_alternative(html_content, "text/html")
         
         # Send email
-        email.send(fail_silently=False)
+        email.send(fail_silently=True)
         
         logger.info(f"HTML verification email sent to {user.email} (resend: {is_resend})")
         return True
@@ -112,7 +112,7 @@ def send_welcome_email(user):
         )
         
         email.attach_alternative(html_content, "text/html")
-        email.send(fail_silently=False)
+        email.send(fail_silently=True)
         
         logger.info(f"HTML welcome email sent to {user.email}")
         return True
@@ -154,7 +154,7 @@ def send_email_with_template(to_email, subject_template, html_template, context)
         )
         
         email.attach_alternative(html_content, "text/html")
-        email.send(fail_silently=False)
+        email.send(fail_silently=True)
         
         logger.info(f"Email sent to {to_email} with template {html_template}")
         return True
@@ -190,7 +190,7 @@ def send_password_reset_email(user, reset_token):
         )
         
         email.attach_alternative(html_content, "text/html")
-        email.send(fail_silently=False)
+        email.send(fail_silently=True)
         
         logger.info(f"Password reset email sent to {user.email}")
         return True
@@ -227,7 +227,7 @@ def send_password_reset_success_email(user, request=None):
         )
         
         email.attach_alternative(html_content, "text/html")
-        email.send(fail_silently=False)
+        email.send(fail_silently=True)
         
         logger.info(f"Password reset success email sent to {user.email}")
         return True
