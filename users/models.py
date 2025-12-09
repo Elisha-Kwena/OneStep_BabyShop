@@ -30,6 +30,17 @@ class CustomUser(AbstractBaseUser,PermissionsMixin):
         }
     )
 
+    first_name = models.CharField(
+        verbose_name=_("first_name"),
+        max_length=255,
+        blank=True
+    )
+    last_name = models.CharField(
+        verbose_name=_("last_name"),
+        max_length=255,
+        blank=True
+    )
+
     phone = models.CharField(
         verbose_name=_("phoneNumber"),
         max_length=20,

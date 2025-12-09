@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'payments.apps.PaymentsConfig',
 
     'drf_yasg',
+    'django_filters',
     'rest_framework',
     'rest_framework_simplejwt',
     'rest_framework_simplejwt.token_blacklist',
@@ -255,6 +256,6 @@ REDOC_SETTINGS = {
     'PATH_IN_MIDDLE': False,
 }
 
-EMAIL_TIMEOUT = 15  # Seconds before timeout (was default 30)
+EMAIL_TIMEOUT = 15  
 EMAIL_USE_SSL = False
 EMAIL_USE_TLS = True

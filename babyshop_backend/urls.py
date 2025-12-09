@@ -22,6 +22,10 @@ urlpatterns = [
 
 
     path("api/v1/auth/",include("users.urls")), #<=== Register endpoint 
+
+
+    # products urls
+    path("api/",include("products.urls"))
   
 ]
 
