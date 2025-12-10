@@ -25,7 +25,7 @@ urlpatterns = [
 
 
     # products urls
-    path("api/",include("products.urls"))
+    path("api/v1/",include("products.urls"))
   
 ]
 

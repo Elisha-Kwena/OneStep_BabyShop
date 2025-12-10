@@ -13,7 +13,7 @@ class Category(models.Model):
     slug = models.SlugField(max_length=150,unique=True)
     description = models.TextField(blank=True)
     image = models.ImageField(upload_to="category_images/",blank=True,null=True)
-    parent = models.ForeignKey('self',on_delete=models.CASCADE,blank=True,related_name="children")
+    parent = models.ForeignKey('self', on_delete=models.CASCADE, blank=True, null=True, related_name="children")
     is_active = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
@@ -271,6 +271,7 @@ class ProductReview(models.Model):
     helpful_count = models.IntegerField(default=0)
     
     is_approved = models.BooleanField(default=False)
+    is_active = models.BooleanField(default=True) 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     
@@ -307,14 +308,34 @@ class Tag(models.Model):
 
 
 class Wishlist(models.Model):
-    """User wishlist/favorites"""
-    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='wishlist')
-    products = models.ManyToManyField(Product, related_name='wishlisted_by', blank=True)
+    user = models.ForeignKey(
+        User, 
+        on_delete=models.CASCADE, 
+        related_name='wishlists'
+    )
+    name = models.CharField(
+        max_length=100, 
+        default='My Wishlist',
+        help_text='Name of the wishlist (e.g., Birthday, Christmas)'
+    )
+    products = models.ManyToManyField(
+        Product, 
+        related_name='wishlisted_by',
+        blank=True
+    )
+    is_public = models.BooleanField(
+        default=False,
+        help_text='If True, others can view this wishlist'
+    )
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     
+    class Meta:
+        unique_together = ['user', 'name']  # Each user can have unique wishlist names
+        ordering = ['-created_at']
+    
     def __str__(self):
-        return f"Wishlist of {self.user.email}"
+        return f"{self.user.username}'s Wishlist: {self.name}"
 
 
 class RecentlyViewed(models.Model):
