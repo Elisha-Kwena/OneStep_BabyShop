@@ -1,6 +1,6 @@
 # users/urls.py
 from django.urls import path
-from .views import (
+from .views.auth import (
     RegisterView,
     VerifyEmailView,
     ResendVerificationView,
@@ -12,6 +12,19 @@ from .views import (
     PasswordResetConfirmView,
     PasswordResetTokenValidateView,
     PasswordResetRequestView
+)
+
+from .views.profile import (
+    UserProfileRetrieveUpdateView,
+    UserProfileMinimalView,
+    UserDashboardView,
+    UserAddressListView,
+    UserAddressCreateView,
+    UserAddressRetrieveUpdateDestroyView,
+    NotificationPreferencesRetrieveUpdateView,
+    NotificationChannelsUpdateView,
+    LoyaltyPointsHistoryListView,
+    UserActivityLogListView
 )
 
 
@@ -38,4 +51,27 @@ urlpatterns = [
     path('password-reset/confirm/', PasswordResetConfirmView.as_view(), name='password_reset_confirm'),
     path('password-reset/validate/<uuid:token>/', PasswordResetTokenValidateView.as_view(), name='password_reset_validate'),
 
+
+
+    # Profile URLs
+    path('user/profile/', UserProfileRetrieveUpdateView.as_view(), name='user-profile'),
+    path('user/profile/minimal/', UserProfileMinimalView.as_view(), name='user-profile-minimal'),
+    path('user/dashboard/', UserDashboardView.as_view(), name='user-dashboard'),
+    
+    # Address URLs
+    path('user/addresses/', UserAddressListView.as_view(), name='address-list'),
+    path('user/addresses/create/', UserAddressCreateView.as_view(), name='address-create'),
+    path('user/addresses/<uuid:id>/', UserAddressRetrieveUpdateDestroyView.as_view(), name='address-detail'),
+    
+    # Notification URLs
+    path('user/notifications/', NotificationPreferencesRetrieveUpdateView.as_view(), name='notification-preferences'),
+    path('user/notifications/channels/', NotificationChannelsUpdateView.as_view(), name='notification-channels'),
+    
+    # Loyalty URLs
+    path('user/loyalty/history/', LoyaltyPointsHistoryListView.as_view(), name='loyalty-history'),
+    
+    # Activity URLs
+    path('user/activity/', UserActivityLogListView.as_view(), name='user-activity'),
+
 ]
+

@@ -9,8 +9,8 @@ from rest_framework_simplejwt.exceptions import TokenError
 from django.utils.translation import gettext_lazy as _
 from django.conf import settings
 
-from .models import CustomUser,PasswordResetToken
-from .serializers import (
+from ..models import CustomUser,PasswordResetToken
+from ..seriallizers.auth import (
     RegisterSerializer, 
     VerifyEmailSerializer,
     ResendVerificationSerializer,
@@ -20,7 +20,7 @@ from .serializers import (
     PasswordResetRequestSerializer
 )
 # Import the HTML email helper functions
-from .utils import send_verification_email, send_welcome_email
+from ..utils import send_verification_email, send_welcome_email
 
 # Helper: generate JWT tokens
 def get_tokens_for_user(user):
@@ -310,7 +310,7 @@ class PasswordResetRequestView(generics.GenericAPIView):
         reset_token = PasswordResetToken.objects.create(user=user)
 
         # send request email
-        from .utils import send_password_reset_email
+        from ..utils import send_password_reset_email
         email_sent = send_password_reset_email(user,reset_token.token)
 
 
@@ -332,7 +332,7 @@ class PasswordResetConfirmView(generics.GenericAPIView):
 
         user = serializer.save()
 
-        from .utils import send_password_reset_success_email
+        from ..utils import send_password_reset_success_email
         send_password_reset_success_email(user, request)
         
         return Response({

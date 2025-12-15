@@ -9,7 +9,7 @@ from rest_framework_simplejwt.views import (
     TokenVerifyView,
     TokenBlacklistView,
 )
-from users.views import VerifiedEmailLoginView
+from users.views.auth import VerifiedEmailLoginView
 urlpatterns = [
     path('admin/', admin.site.urls),
 
@@ -19,14 +19,20 @@ urlpatterns = [
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('api/token/verify/', TokenVerifyView.as_view(), name='token_verify'),
     path('api/token/blacklist/', TokenBlacklistView.as_view(), name='token_blacklist'),
-
-
     path("api/v1/auth/",include("users.urls")), #<=== Register endpoint 
 
-
     # products urls
-    path("api/v1/",include("products.urls"))
-  
+    path("api/v1/products/",include("products.urls")),
+
+    # cart urls
+    path("api/v1/cart/",include("cart.urls")),
+
+    # order urls
+    path("api/v1/orders/",include("orders.urls")),
+
+    # payment urls
+    path("api/v1/payments/",include("payments.urls"))
+
 ]
 
 if settings.DEBUG:

@@ -23,7 +23,7 @@ urlpatterns = [
     path('categories/<slug:slug>/delete/', CategoryUpdateDeleteView.as_view(), name='category-delete'),
     
     # Product URLs
-    path('products/', ProductListView.as_view(), name='product-list'),
+    path('products-db/', ProductListView.as_view(), name='product-list'),
     path('products/create/', ProductCreateView.as_view(), name='product-create'),
     path('products/<slug:slug>/', ProductDetailView.as_view(), name='product-detail'),
     path('products/<slug:slug>/update/', ProductUpdateView.as_view(), name='product-update'),

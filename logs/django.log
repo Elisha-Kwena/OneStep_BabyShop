@@ -1057,3 +1057,481 @@ C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\users\models.py changed, reloadin
 Watching for file changes with StatReloader
 C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\users\models.py changed, reloading.
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /
+Not Found: /favicon.ico
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\babyshop_backend\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\cart\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\cart\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\products\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\babyshop_backend\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\babyshop_backend\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\cart\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\cart\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\cart\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\cart\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\payments\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\payments\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\payments\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /
+Not Found: /favicon.ico
+Method Not Allowed: /api/v1/auth/register/
+Not Found: /
+Not Found: /api/v1/auth/
+Not Found: /api/cart/items/add/
+Not Found: /api/v1/cart/
+Not Found: /api/cart/items/add/
+Bad Request: /api/v1/cart/items/add/
+Bad Request: /api/v1/cart/items/add/
+Bad Request: /api/v1/cart/items/add/
+Not Found: /api/v1/products/
+Not Found: /api/v1/products/baby-t-shirt-3-pack/
+Method Not Allowed: /api/v1/cart/items/add/
+Bad Request: /api/v1/orders/create/
+Not Found: /api/v1/auth/
+Unauthorized: /api/v1/auth/user/profile/
+Profile retrieved for user: elisrendaivy@gmail.com
+Not Found: /api/v1/auth/users/
+Profile updated for user: elisrendaivy@gmail.com
+Internal Server Error: /api/v1/auth/user/addresses/create
+Traceback (most recent call last):
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\django\utils\deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\django\middleware\common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/v1/auth/user/addresses/create/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Address created for user: elisrendaivy@gmail.com
+Address created for user: elisrendaivy@gmail.com
+Method Not Allowed: /api/v1/auth/user/notifications/
+Created default notification preferences for user: elisrendaivy@gmail.com
+Notification preferences updated for user: elisrendaivy@gmail.com
+Profile retrieved for user: elisrendaivy@gmail.com
+Dashboard retrieved for user: elisrendaivy@gmail.com
+Method Not Allowed: /api/v1/orders/create/
+Bad Request: /api/v1/orders/create/
+Method Not Allowed: /api/v1/orders/checkout/
+Bad Request: /api/v1/orders/create/
+Not Found: /api/v1orders/create/
+Order creation error for elisrendaivy@gmail.com: 'UserAddress' object has no attribute 'state'
+Internal Server Error: /api/v1/orders/create/
+Not Found: /api/v1/products/1/
+Not Found: /api/v1/products/products/1/
+Order creation error for elisrendaivy@gmail.com: 'UserAddress' object has no attribute 'state'
+Internal Server Error: /api/v1/orders/create/
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\models.py changed, reloading.
+Watching for file changes with StatReloader
+Order creation error for elisrendaivy@gmail.com: unsupported operand type(s) for *: 'NoneType' and 'int'
+Internal Server Error: /api/v1/orders/create/
+Order creation error for elisrendaivy@gmail.com: unsupported operand type(s) for *: 'NoneType' and 'int'
+Internal Server Error: /api/v1/orders/create/
+Not Found: /api/v1/products/products/1/
+Not Found: /api/v1/products/
+Order creation error for elisrendaivy@gmail.com: unsupported operand type(s) for *: 'NoneType' and 'int'
+Internal Server Error: /api/v1/orders/create/
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/v1/orders/create/
+Traceback (most recent call last):
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2128, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'UserAddress'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\rest_framework\generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\views.py", line 142, in create
+    if serializer.is_valid():
+       ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\rest_framework\serializers.py", line 447, in run_validation
+    value = self.validate(value)
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\serializers.py", line 161, in validate
+    address = UserAddress.objects.get(id=shipping_address_ref, user=request.user)
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\django\db\models\query.py", line 625, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\django\db\models\query.py", line 1542, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\django\db\models\query.py", line 1560, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\django\db\models\query.py", line 1570, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\django\db\models\sql\query.py", line 1671, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\django\db\models\sql\query.py", line 1703, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\django\db\models\sql\query.py", line 1613, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\django\db\models\sql\query.py", line 1440, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\django\db\models\lookups.py", line 35, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\django\db\models\lookups.py", line 391, in get_prep_lookup
+    return super().get_prep_lookup()
+           ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\django\db\models\lookups.py", line 93, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2130, in get_prep_value
+    raise e.__class__(
+        "Field '%s' expected a number but got %r." % (self.name, value),
+    ) from e
+TypeError: Field 'id' expected a number but got <UserAddress: Sarah Johnson - Nairobi, Nairobi>.
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Order created: BABY-20251214-6DM47Y for elisrendaivy@gmail.com
+Order creation error for elisrendaivy@gmail.com: 'OrderItem' object has no attribute 'product_image'
+Internal Server Error: /api/v1/orders/create/
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Order created: BABY-20251214-V7SK9M for elisrendaivy@gmail.com
+Order creation error for elisrendaivy@gmail.com: 'Product' object has no attribute 'primary_image'
+Internal Server Error: /api/v1/orders/create/
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Order created: BABY-20251214-0W4R5D for elisrendaivy@gmail.com
+Order creation error for elisrendaivy@gmail.com: 'Product' object has no attribute 'primary_image'
+Internal Server Error: /api/v1/orders/create/
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Order created: BABY-20251214-WKINR1 for elisrendaivy@gmail.com
+Method Not Allowed: /api/v1/orders/checkout/
+Unauthorized: /api/v1/orders/checkout/
+Unauthorized: /api/v1/orders/checkout/
+Unauthorized: /api/token/
+Method Not Allowed: /api/v1/orders/checkout/
+Method Not Allowed: /api/v1/cart/items/
+Order detail error for elisrendaivy@gmail.com: No Order matches the given query.
+Internal Server Error: /api/v1/orders/checkout/
+Method Not Allowed: /api/v1/orders/checkout/
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\views.py changed, reloading.
+Watching for file changes with StatReloader
+Method Not Allowed: /api/v1/orders/checkout/
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\views.py changed, reloading.
+Watching for file changes with StatReloader
+Method Not Allowed: /api/v1/orders/checkout/
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\views.py changed, reloading.
+Watching for file changes with StatReloader
+Method Not Allowed: /api/v1/orders/checkout/
+Not Found: /api/v1/cart/
+Not Found: /api/v1/cart/cart/
+Order detail error for elisrendaivy@gmail.com: No Order matches the given query.
+Internal Server Error: /api/v1/orders/checkout/
+Method Not Allowed: /api/v1/orders/checkout/
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\views.py changed, reloading.
+Watching for file changes with StatReloader
+Method Not Allowed: /api/v1/orders/checkout/
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\views.py changed, reloading.
+Watching for file changes with StatReloader
+Method Not Allowed: /api/v1/orders/checkout/
+Method Not Allowed: /api/v1/orders/checkout/
+Watching for file changes with StatReloader
+Method Not Allowed: /api/v1/orders/checkout/
+Method Not Allowed: /api/v1/orders/checkout/
+Watching for file changes with StatReloader
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\views.py changed, reloading.
+Watching for file changes with StatReloader
+Method Not Allowed: /api/v1/orders/checkout/
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\views.py changed, reloading.
+Watching for file changes with StatReloader
+Method Not Allowed: /api/v1/orders/checkout-test/
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Method Not Allowed: /api/v1/orders/checkout/
+Method Not Allowed: /api/v1/orders/checkout/
+Watching for file changes with StatReloader
+Method Not Allowed: /api/v1/orders/
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Method Not Allowed: /api/v1/orders/order-list/
+Order created: BABY-20251215-HR8H5M for elisrendaivy@gmail.com
+Error getting product image: The 'image' attribute has no file associated with it.
+Method Not Allowed: /api/v1/orders/1/
+Order detail error for elisrendaivy@gmail.com: No Order matches the given query.
+Internal Server Error: /api/v1/orders/10/
+Order detail error for elisrendaivy@gmail.com: No Order matches the given query.
+Internal Server Error: /api/v1/orders/1/
+Order detail error for elisrendaivy@gmail.com: No Order matches the given query.
+Internal Server Error: /api/v1/orders/10/
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Order detail error for elisrendaivy@gmail.com: No Order matches the given query.
+Internal Server Error: /api/v1/orders/7/
+Order detail error for elisrendaivy@gmail.com: No Order matches the given query.
+Internal Server Error: /api/v1/orders/1/
+Order detail error for elisrendaivy@gmail.com: No Order matches the given query.
+Internal Server Error: /api/v1/orders/2/
+Order detail error for elisrendaivy@gmail.com: No Order matches the given query.
+Internal Server Error: /api/v1/orders/3/
+Order detail error for elisrendaivy@gmail.com: No Order matches the given query.
+Internal Server Error: /api/v1/orders/4/
+Order detail error for elisrendaivy@gmail.com: No Order matches the given query.
+Internal Server Error: /api/v1/orders/6/
+Error getting product image: The 'image' attribute has no file associated with it.
+Forbidden: /api/v1/orders/BABY-20251215-HR8H5M/update/
+Forbidden: /api/v1/orders/BABY-20251215-HR8H5M/update/
+Order updated: BABY-20251215-HR8H5M by elishakwena@gmail.com
+Error getting product image: The 'image' attribute has no file associated with it.
+Order updated: BABY-20251215-HR8H5M by elishakwena@gmail.com
+Error getting product image: The 'image' attribute has no file associated with it.
+Order cancelled: BABY-20251215-HR8H5M by elisrendaivy@gmail.com
+Error getting product image: The 'image' attribute has no file associated with it.
+Bad Request: /api/v1/orders/BABY-20251215-HR8H5M/update/
+Order updated: BABY-20251214-WKINR1 by elishakwena@gmail.com
+Method Not Allowed: /api/v1/orders/BABY-20251214-WKINR1/
+Method Not Allowed: /api/v1/orders/BABY-20251214-WKINR1/cancel/
+Order cancellation error for elisrendaivy@gmail.com: No Order matches the given query.
+Internal Server Error: /api/v1/orders/BABY-20251214-WKINR1/cancel/
+Method Not Allowed: /api/v1/orders/
+Method Not Allowed: /api/v1/orders/
+Bad Request: /api/v1/orders/BABY-20251214-0W4R5D/status/
+Order status updated: BABY-20251214-0W4R5D to confirmed
+Order status updated: BABY-20251214-0W4R5D to processing
+Order status updated: BABY-20251214-0W4R5D to shipped
+Order payment updated: BABY-20251214-0W4R5D
+Order detail error for elisrendaivy@gmail.com: No Order matches the given query.
+Internal Server Error: /api/v1/orders/summary/
+Order detail error for elisrendaivy@gmail.com: No Order matches the given query.
+Internal Server Error: /api/v1/orders/summary/
+Order detail error for elisrendaivy@gmail.com: No Order matches the given query.
+Internal Server Error: /api/v1/orders/summary/
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\views.py changed, reloading.
+Watching for file changes with StatReloader
+Error getting product image: The 'image' attribute has no file associated with it.
+Not Found: /api/v1/orders/summary/
+Not Found: /api/v1/orders/summary/
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /api/v1/orders/stats/monthly/
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\babyshop_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Monthly stats error for elisrendaivy@gmail.com: Cannot compute Avg('total_amount'): 'total_amount' is an aggregate
+Internal Server Error: /api/v1/orders/stats/monthly/
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\views.py changed, reloading.
+Watching for file changes with StatReloader
+Checkout request from user: elisrendaivy@gmail.com
+Checkout request from user: elisrendaivy@gmail.com
+Checkout data: {'shipping_address_id': 1, 'billing_address_id': 2, 'billing_same_as_shipping': False, 'shipping_method': 'nairobi_only', 'payment_method': 'mpesa', 'customer_notes': 'Notes', 'gift_message': 'Gift', 'gift_wrapping': True}
+User has cart: True
+Cart items: 0
+Bad Request: /api/v1/orders/checkout/
+Not Found: /api/v1/cart/cart/
+Method Not Allowed: /api/v1/cart/cart-details/
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\products\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /api/v1/addresses/
+Not Found: /api/v1/auth/addresses/
+Checkout request from user: elisrendaivy@gmail.com
+Checkout request from user: elisrendaivy@gmail.com
+Checkout data: {'shipping_address_id': 1, 'billing_address_id': 2, 'billing_same_as_shipping': False, 'shipping_method': 'nairobi_only', 'payment_method': 'mpesa', 'customer_notes': 'Notes', 'gift_message': 'Gift', 'gift_wrapping': True}
+User has cart: True
+Cart items: 1
+Checkout completed: BABY-20251215-N9C2CI for elisrendaivy@gmail.com
+Error getting product image: The 'image' attribute has no file associated with it.
+Checkout error for elisrendaivy@gmail.com: 'dict' object has no attribute 'avatar'
+Internal Server Error: /api/v1/orders/checkout/
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\users\seriallizers\profile.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /api/v1/orders/admin/orders/
+Method Not Allowed: /api/v1/orders/admin/orders/
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\payments\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /api/v1/payments/create/
+Bad Request: /api/v1/payments/create/
+Bad Request: /api/v1/payments/create/
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\payments\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Payment initiated: PAY-BABY-20251215-N9C2CI-112314 for elisrendaivy@gmail.com
+Payment creation error for elisrendaivy@gmail.com: 'dict' object has no attribute 'status'
+Internal Server Error: /api/v1/payments/create/
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\payments\views.py changed, reloading.
+Watching for file changes with StatReloader
+Payment initiated: PAY-BABY-20251215-N9C2CI-112609 for elisrendaivy@gmail.com
+Payment creation error for elisrendaivy@gmail.com: 'dict' object has no attribute 'status'
+Traceback (most recent call last):
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\payments\views.py", line 214, in create
+    'data': response_serializer.data
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\rest_framework\serializers.py", line 573, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\rest_framework\serializers.py", line 540, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\rest_framework\serializers.py", line 540, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\rest_framework\serializers.py", line 540, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\rest_framework\fields.py", line 1870, in to_representation
+    return method(value)
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\serializers.py", line 289, in get_estimated_delivery_date
+    if obj.status in ['pending', 'confirmed', 'processing']:
+       ^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'status'
+Internal Server Error: /api/v1/payments/create/
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Payment initiated: PAY-BABY-20251215-N9C2CI-113001 for elisrendaivy@gmail.com
+Payment creation error for elisrendaivy@gmail.com: 'ReturnDict' object has no attribute 'status'
+Traceback (most recent call last):
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\payments\views.py", line 214, in create
+    'data': response_serializer.data
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\rest_framework\serializers.py", line 573, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\rest_framework\serializers.py", line 540, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\rest_framework\serializers.py", line 540, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\venv\Lib\site-packages\rest_framework\fields.py", line 1870, in to_representation
+    return method(value)
+  File "C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\payments\serializers.py", line 202, in get_payment_instructions
+    if obj.status != 'pending':
+       ^^^^^^^^^^
+AttributeError: 'ReturnDict' object has no attribute 'status'
+Internal Server Error: /api/v1/payments/create/
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\payments\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Payment initiated: PAY-BABY-20251215-N9C2CI-113138 for elisrendaivy@gmail.com
+Admin payment list error: name 'Sum' is not defined
+Internal Server Error: /api/v1/payments/admin/payments/
+Admin payment list error: name 'Sum' is not defined
+Internal Server Error: /api/v1/payments/admin/payments/
+Admin payment list error: name 'Sum' is not defined
+Internal Server Error: /api/v1/payments/admin/payments/
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\payments\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\payments\views.py changed, reloading.
+Watching for file changes with StatReloader
+Webhook received from mpesa
+Bad Request: /api/v1/payments/admin/payments/PAY-BABY-20251215-N9C2CI-113001/status/
+Payment status updated: PAY-BABY-20251215-N9C2CI-113001 to pending
+Payment status updated: PAY-BABY-20251215-N9C2CI-113001 to successful
+Not Found: /api/v1/payments/admin/payments/PAY-BABY-20251215-N9C2CI-113001/refund/
+Bad Request: /api/v1/payments/PAY-BABY-20251215-N9C2CI-113001/refund/
+Unauthorized: /api/v1/payments/PAY-BABY-20251215-N9C2CI-113001/
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\payments\models.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /api/v1/payments/PAY-BABY-20251215-N9C2CI-113001/status/
+Method Not Allowed: /api/v1/payments/admin/payments/PAY-BABY-20251215-N9C2CI-113001/status/
+Bad Request: /api/v1/payments/admin/payments/PAY-BABY-20251215-N9C2CI-113001/status/
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\payments\models.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /api/v1/payments/admin/payments/PAY-BABY-20251215-N9C2CI-113001/status/
+Forbidden: /api/v1/payments/PAY-BABY-20251215-N9C2CI-113001/refund/
+Bad Request: /api/v1/payments/PAY-BABY-20251215-N9C2CI-113001/refund/
+Unauthorized: /api/v1/payments/PAY-BABY-20251215-N9C2CI-113001/
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\babyshop_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Payment detail error for elishakwena@gmail.com: No Payment matches the given query.
+Internal Server Error: /api/v1/payments/PAY-BABY-20251215-N9C2CI-113001/
+Payment detail error for elishakwena@gmail.com: No Payment matches the given query.
+Internal Server Error: /api/v1/payments/PAY-BABY-20251215-N9C2CI-113001/

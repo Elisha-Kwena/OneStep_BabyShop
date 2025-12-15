@@ -9,13 +9,13 @@ from django.core.exceptions import ValidationError as DjangoValidationError
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 from django.core.mail import send_mail
 from django.conf import settings
-from .models import CustomUser,PasswordResetToken,ChildInfo
+from ..models import CustomUser,PasswordResetToken
 
 import re
 import logging
 logger = logging.getLogger(__name__)
 
-from .utils import send_verification_email,send_welcome_email
+from ..utils import send_verification_email,send_welcome_email
 
 
 # ===================== Strong Password Validation =====================
@@ -297,44 +297,3 @@ class PasswordResetConfirmSerializer(serializers.Serializer):
 
 
 
-# In serializers.py
-class ChildInfoSerializer(serializers.ModelSerializer):
-    age_years = serializers.IntegerField(read_only=True)
-    age_months = serializers.IntegerField(read_only=True)
-    age_display = serializers.CharField(read_only=True)
-    recommended_size = serializers.CharField(read_only=True)
-    next_size = serializers.CharField(read_only=True)
-    growth_percentile = serializers.CharField(read_only=True)
-    needs_size_update = serializers.BooleanField(read_only=True)
-    
-    class Meta:
-        model = ChildInfo
-        fields = [
-            'id', 'name', 'birth_date', 'gender',
-            'current_size', 'height', 'weight',
-            'favorite_colors', 'style_preference',
-            'allergies', 'special_notes', 'is_active',
-            'age_years', 'age_months', 'age_display',
-            'recommended_size', 'next_size',
-            'growth_percentile', 'needs_size_update',
-            'created_at', 'updated_at'
-        ]
-        read_only_fields = ['created_at', 'updated_at']
-    
-    def validate_birth_date(self, value):
-        """Ensure child is under 6 years."""
-        from datetime import date
-        today = date.today()
-        age_years = today.year - value.year
-        
-        if (today.month, today.day) < (value.month, value.day):
-            age_years -= 1
-        
-        if age_years >= 7:  # 6 years and above
-            raise serializers.ValidationError("Child must be 6 years or younger for this shop.")
-        
-        # Ensure not future date
-        if value > today:
-            raise serializers.ValidationError("Birth date cannot be in the future.")
-        
-        return value
