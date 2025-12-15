@@ -1535,3 +1535,7 @@ Payment detail error for elishakwena@gmail.com: No Payment matches the given que
 Internal Server Error: /api/v1/payments/PAY-BABY-20251215-N9C2CI-113001/
 Payment detail error for elishakwena@gmail.com: No Payment matches the given query.
 Internal Server Error: /api/v1/payments/PAY-BABY-20251215-N9C2CI-113001/
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\payments\models.py changed, reloading.
+Watching for file changes with StatReloader
+Payment PAY-BABY-20251215-N9C2CI-113001: Auto-fixed order BABY-20251215-N9C2CI
+Refund requested for payment: PAY-BABY-20251215-N9C2CI-113001
