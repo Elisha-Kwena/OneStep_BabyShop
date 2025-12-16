@@ -35,12 +35,9 @@ class Order(models.Model):
         ('bank_transfer', 'Bank Transfer'),
         ('cash_on_delivery', 'Cash on Delivery'),
         ('mobile_payment', 'Mobile Payment'),
-        ('mpesa', 'M-Pesa'),  # Kenya specific
+        ('mpesa', 'M-Pesa'),  
     ]
     SHIPPING_METHOD_CHOICES = [
-        ('standard', 'Standard Shipping (5-7 days)'),
-        ('express', 'Express Shipping (2-3 days)'),
-        ('next_day', 'Next Day Delivery'),
         ('store_pickup', 'Store Pickup'),
         ('nairobi_only', 'Nairobi Delivery'),
         ('other_towns', 'Other Towns Delivery'),

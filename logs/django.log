@@ -1539,3 +1539,13 @@ C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\payments\models.py changed, reloa
 Watching for file changes with StatReloader
 Payment PAY-BABY-20251215-N9C2CI-113001: Auto-fixed order BABY-20251215-N9C2CI
 Refund requested for payment: PAY-BABY-20251215-N9C2CI-113001
+Watching for file changes with StatReloader
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /api/v1/products
+Not Found: /api/v1/products/
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\products\models.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /api/v1/products/products/create/
+C:\Users\pc\Projects\BABYSHOP\OneStep_BabyShop\orders\models.py changed, reloading.
+Watching for file changes with StatReloader

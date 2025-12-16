@@ -900,13 +900,3 @@ class AdminOrderListView(generics.ListAPIView):
             }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         
 # Add this NEW view class
-class TestCheckoutView(generics.CreateAPIView):
-    permission_classes = [permissions.IsAuthenticated]
-    
-    def create(self, request, *args, **kwargs):
-        return Response({
-            'success': True,
-            'message': 'Test endpoint works!',
-            'method': request.method,
-            'user': request.user.email
-        })

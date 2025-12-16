@@ -287,36 +287,7 @@ class Payment(models.Model):
             self.order.save()
     
     def can_be_refunded(self):
-        """Check if payment can be refunded with auto-fix"""
-        from django.utils import timezone
-        import logging
-        logger = logging.getLogger(__name__)
-        
-        # AUTO-FIX: If successful but missing paid_at, fix it immediately
-        if self.status == 'successful' and not self.paid_at:
-            logger.warning(f"Payment {self.payment_reference}: Auto-fixing missing paid_at")
-            self.paid_at = timezone.now()
-            
-            # Also fix other missing fields
-            if not self.gateway_reference:
-                self.gateway_reference = f"AUTO-FIX-GW-{self.payment_reference}"
-            
-            if self.payment_gateway == 'mpesa' and not self.transaction_code:
-                self.transaction_code = f"MPESA-AUTO-{self.id}"
-            
-            self.save()
-            
-            # Also fix the order
-            if self.order and self.order.payment_status != 'paid':
-                self.order.payment_status = 'paid'
-                self.order.payment_date = self.paid_at
-                if self.order.status == 'pending':
-                    self.order.status = 'confirmed'
-                self.order.save()
-                logger.info(f"Payment {self.payment_reference}: Auto-fixed order {self.order.order_number}")
-            
-            return True
-        
+        """Check if payment can be refunded"""
         return self.status == 'successful' and self.paid_at is not None
     
     @property
